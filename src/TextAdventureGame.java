@@ -10,7 +10,7 @@ public class TextAdventureGame {
 
     Room[][] map;
 
-    Scanner input;
+    Scanner input = new Scanner(System.in);
 
     public static void save(int row, int col) {
         File file = new File("./save/saved_game.txt");
@@ -81,7 +81,7 @@ public class TextAdventureGame {
     public void initialization() {
         // Init av scanner input for reading user input
         // Initialisering
-        Scanner input = new Scanner(System.in);
+
 
         Room pinkRoom = new Room("Pink room", "This is a room with pink walls filled with pink furniture");
         Room aHall = new Room("A hall", "A large hallway with a fancy rug on the floor");
